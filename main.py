@@ -81,9 +81,9 @@ class Comment(db.Model):
     content = db.Column(db.Text, nullable=False)
 
 
-# # Create tables
-# with app.app_context():
-#     db.create_all()
+# Create tables
+with app.app_context():
+    db.create_all()
 
 
 @app.route('/users')
